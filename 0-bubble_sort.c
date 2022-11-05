@@ -11,11 +11,11 @@ void bubble_sort(int *array, size_t size)
 	size_t i;
 	size_t j;
 
-	/*bool swapped;*/
+	bool swapped;
 
 	for (i = 0; i < size; i++)
 	{
-		/*swapped = false;*/
+		swapped = false;
 
 		for (j = 0; j < size - 1; j++)
 		{
@@ -26,11 +26,11 @@ void bubble_sort(int *array, size_t size)
 				array[j] = array[j + 1];
 				array[j + 1] = tmp;
 				print_array(array, size);
-
-				/*swapped = true;*/
+				swapped = true;
 			}
 		}
-
+		if (swapped == false)
+			break;
 	}
 }
 
