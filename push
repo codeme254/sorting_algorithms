@@ -1,6 +1,6 @@
 # script to automate the pushing proces
 git add -A
 git commit -m "$1"
-echo "finished committing, now run git push\n"
+echo "finished committing, pushing code to remote..."
 git push
 
